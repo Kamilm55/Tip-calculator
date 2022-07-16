@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css  ">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ 
+</head>
+<body style="background-color:rgb(197, 228, 231);">
+  <h1 class="text-center  mt-5" style="color: #00494D;">Made by Kamil Memmedov <br>(Html,Css and JavaScript)</h1>
+
+  <div class="allDiv col-12 col-md-8">
+    <div class="div1">
+   <div class="inputDiv">
+ <label for="input1"  class="labelDiv1" >Bill</label> 
+      <input  id="input1" type="number" min="0"  class="changeInput "><i class="fa-solid fa-dollar-sign faIcons"></i>
+    </div>
+ 
+      <label for="input2" class="labelDiv1">Select Tip %</label> 
+ <div  class="btnsGrid">
+ <button class="percentBtns">5%</button>
+ <button class="percentBtns active percent10">10%</button>
+ <button class="percentBtns ">15%</button>
+ <button class="percentBtns">25%</button> 
+ <button class="percentBtns">50%</button> 
+ 
+ <input  id="input2" type="number" min="1" class="customBtn changeInput " placeholder="Custom">
+</div>
+<div class="inputDiv">
+  <label for="input3" class="labelDiv1"> Number of People</label> 
+  <input id="input3" type="number" min="1"  class="changeInput"><i class="fa-solid fa-user faIcons"></i>
+</div>
+</div>
+
+<div class="div2">
+  <div class="div2Grid1 divflex">
+    <div class="innerDiv1">
+ <h4 >Tip Amount</h4>   
+<p  class="personLabel">/ person</p>  
+</div>
+<h2 class="moneyAmount1">$0.00</h2>
+</div>
+
+ <div class="div2Grid2 divflex">
+  <div class="innerDiv1">
+  <h4 > Total</h4> 
+ <p class="personLabel">/ person</p> 
+</div>
+<h2 class="moneyAmount2">$0.00</h2>
+
+</div>
+
+ <div class="div2Grid3">
+ <button type="reset" class="resetBtn">Reset</button> 
+</div>
+</div>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>

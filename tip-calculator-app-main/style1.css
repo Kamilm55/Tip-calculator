@@ -1,0 +1,191 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Strong cyan: hsl(172, 67%, 45%)
+
+### Neutral
+
+- Very dark cyan: hsl(183, 100%, 15%)
+- Dark grayish cyan: hsl(186, 14%, 43%)
+- Grayish cyan: hsl(184, 14%, 56%)
+- Light grayish cyan: hsl(185, 41%, 84%)
+- Very light grayish cyan: hsl(189, 41%, 97%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (form inputs): 24px
+
+### Font
+
+- Family: [Space Mono](https://fonts.google.com/specimen/Space+Mono)
+- Weights: 700
+ */
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ :root{
+--strong-cyan: hsl(172, 67%, 45%);/*bg-color*/
+--Very-dark-cyan: hsl(183, 100%, 15%);/*card and btns bg*/
+--Dark-grayish-cyan: hsl(186, 14%, 43%);/*reset-bg*/
+--Grayish-cyan: hsl(184, 14%, 56%);/*resettext and labels*/
+--Light-grayish-cyan: hsl(188, 24%, 92%);/*inputs*/
+--Very-light-grayish-cyan: hsl(189, 41%, 97%);/*numbers and text*/
+--White: hsl(0, 0%, 100%);/**/
+
+ }
+ @font-face {
+    font-family: 'Space Mono', monospace , sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap);
+  }
+ body{
+    
+     font-size: 24px;
+     font-weight: 700;
+     background-color: var(--strong-cyan)
+ }
+ h4,h5,h6,p{
+     color: white;
+ }
+ .allDiv{
+    font-family: 'Space Mono', monospace , sans-serif;
+     width: 75%;
+     margin:60px  auto;
+     height: 60vh;
+     background-color: var(--White);
+     border-radius: 20px;
+     padding: 20px;
+     display: flex;
+     justify-content: space-between;
+     gap: 30px;
+ }
+ .div1{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     width: 50%;
+ }
+ .div2{
+ background-color: var(--Very-dark-cyan);
+ padding: 15px;
+ border-radius: 14px;
+ width: 50%;
+ display: grid;
+ grid-template-rows:1fr 1fr 4fr 1fr ;
+ gap: 15px;
+ 
+ }
+ .div2Grid3{
+    grid-row:4 / 5;
+    padding: 10px 15px;
+ }
+ .resetBtn{
+     width: 100%;
+     padding: 10px;
+     border-radius: 5px;
+     border: 0px solid;
+     color: var(--Dark-grayish-cyan);
+     background-color: var(--Grayish-cyan);
+     transition:color 0.4s, background 0.4s;
+     font-size: 16px;
+     font-weight:600 ;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+ }
+ .changeInput{
+     background-color: var(--Light-grayish-cyan);
+     border: 0px solid ;
+    border-radius: 3px;
+    width: 100%;
+    padding: 8px;
+    height: 36px;
+ }
+ .btnsGrid{
+     display: grid;
+     grid-template-rows:repeat(2,1fr) ;
+     grid-template-columns:repeat(3,1fr) ;
+     gap: 15px;
+ }
+ .btnsGrid >*{
+     padding: 10px 18px;
+    background-color: var(--Very-dark-cyan);
+    color: var(--White);
+    border-radius: 4px;
+    border: 0px solid;
+    font-size: 18px;
+    font-weight: 600;
+    }
+button{
+    cursor: pointer;
+}
+    .customBtn{
+        background-color: var(--Light-grayish-cyan);
+        color: var(--Very-dark-cyan);
+        padding: 24px 0;
+    }
+.labelDiv1{
+color: var(--Grayish-cyan);
+}
+.personLabel{
+    color:var(--Grayish-cyan) ;
+}
+.divflex{
+    display: flex;
+    justify-content: space-between;
+}
+h2{
+    color: var(--strong-cyan);
+}
+.changeInput:focus, #input2:focus{
+    border: 2px var(--strong-cyan) solid;
+    outline: 0px;
+ /*    padding: 8px; */
+}
+.faIcons{
+    color: hsla(180, 4%, 58%, 0.775);
+    position: absolute;
+    bottom: 6px;
+    left: 6px;
+  
+}
+.customBtn:focus{
+    padding:20px 0;
+}
+.inputDiv{
+    position: relative;
+}
+input { 
+    text-align: right;
+   }
+
+.percentBtns{
+    transition:color 0.4s, background 0.4s;
+   }
+
+.percentBtns:hover, .resetBtn:hover{
+    background-color: var(--strong-cyan);
+    color:var(--Very-dark-cyan) ;
+ }
+ .active{
+    background-color: var(--strong-cyan);
+    color:var(--Very-dark-cyan) ;
+ }
+
+ #input2{
+    width: 100%;
+    text-align: center;
+ }
